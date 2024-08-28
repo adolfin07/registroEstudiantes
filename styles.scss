@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Loto", Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+:root {
+    --white: #EEEEEE;
+    --blue-sky: #76ABAE;
+    --gray: #31363F;
+    --dark: #222831;
+}
+
+body {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form {
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    width: 45%;
+    background-color: #31363fb2;
+    padding: 20px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1,
+    h2 {
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            margin: 5px;
+
+            label {
+                text-transform: capitalize;
+            }
+
+            input {
+                background-color: #222831;
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+
+            }
+        }
+
+        .submit_div {
+            margin-bottom: -10px;
+            width: 30%;
+
+            input {
+                width: 100%;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: all 300ms ease-in-out;
+            }
+
+            input:hover{
+                background-color: wheat;
+                color: #222831;
+            }
+        }
+    }
+}
