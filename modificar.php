@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/styles/styles.css">
+  
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
     ?>
 
-    <form action="up_estudiante.php?id=<?php echo $fila['id']; ?>" method="POST">
+    <form action="up_estudiantes.php?id=<?php echo $fila['id']; ?>" method="POST">
 
         <label for="matricula">matricula</label><br>
         <input type="text" name="matricula" placeholder="matricula" value="<?php echo $fila['matricula']; ?>"

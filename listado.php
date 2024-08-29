@@ -3,8 +3,8 @@
 <head>
     <title>registro de estudiantes</title>
     <meta charset="utf8">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <script src="script.js"></script>
+
+
 </head>
 
 <body>

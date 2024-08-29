@@ -1,4 +1,4 @@
-<?php
+<?php include 'conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_REQUEST['id'];
@@ -16,8 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($up) {
         header('location: listado.php');
+        exit();
     } else {
-        echo "Hubo algún error, actualización no exitosa";
+        echo "Hubo algún error, actualización no exitosa" ;
     }
     $con->close();
 }
